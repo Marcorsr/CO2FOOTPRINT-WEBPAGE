@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- weitere Metatacks noch hinzufügen-->
-    <link rel="stylesheet" type ="text/css" href="sytle.css">
+    <link rel="stylesheet"  href="style.css">
+    <!--Evtl. auf verschiedene Medien CSS Anpassen. siehe S.48-->
     <title>CO2-footprint</title>
 </head>
 <body>
@@ -31,9 +32,11 @@
 
 <h1> About us</h1>
 
-<p> Some Information about us and this webpage </p>
+<p> Umweltschutz ist keine optionale Zusatzleistung, sondern eine notwendige Verantwortung, die wir alle tragen. Es ist wichtig, dass wir unseren CO2-Fußabdruck reduzieren
+    und nachhaltige Alternativen nutzen, um die negativen Auswirkungen auf die Umwelt zu minimieren. Jeder Einzelne von uns kann einen Beitrag leisten, indem wir bewusster
+    leben und unseren Ressourcenverbrauch minimieren. Wir müssen lernen, in Harmonie mit der Natur zu leben und uns an ihren Rhythmen zu orientieren, anstatt sie auszubeuten. </p>
 
-
+<p> „Nachhaltigkeit ist nicht nur eine Option. Es ist eine Notwendigkeit.“ – Ban Ki-moon</p>
 
 
 
@@ -42,7 +45,7 @@
 <h1> CO2 Foot Print Table </h1>
 <p> Check this table to get to know which country or which company has the biggest C02 Footprint</p>
 
-<table style="border: 1px solid blue">
+<table>
     <tr>
         <th>Country </th>
         <th>Company</th>
@@ -69,16 +72,35 @@
 <hr>
 
 <h1> Möchten Sie mit uns Kontakt aufnehmnen, dann nutzen Sie das folgende Formular:</h1>
-<form>
-
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+    <input type="submit" value="Submit">
+    <<!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
 
 </form>
+
 
 <!--Über google schauen crossBrowserTest S.37-->
 <!-- Validate hmtl Datei /code über validator.w3.org -->
 
 <footer>
     <a>Kontakt</a> <!--Verlinken auf neue Seite in der über ein Formular Frage gestellt werden kann -->
+    <address>
+        <dl>
+            <dt>Tel.</dt>
+            <dd><a href="tel:+49-89-12345678">089 1234 5678</a></dd>
+
+            <dt>Erreichbarkeit</dt>
+            <dd><span>Mo–Fr:</span> <span>16:00–21:00 Uhr</span></dd>
+
+            <dt>E-Mail Adresse</dt>
+            <dd><a href="mailto:kontakt@example.com">kontakt@example.com</a></dd>
+
+        </dl>
+    </address>
     <p>© 2023 by Marco Paletta</p>
 </footer>
 
