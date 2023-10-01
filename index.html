@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <!-- weitere Metatacks noch hinzufügen-->
@@ -14,33 +14,57 @@
         <img src="Logo.png" width=20%>
     </figure>
     <p>Anderes Land - Anderer CO2 Fußabdruck</p>
+    <div id="head">
+        <nav>
+            <ul>
+                <li><a href="#link_1.html">About us</a></li>
+                <li><a href="#link_2.html">CO2 Footprint Table</a></li>
+                <!--Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)-->
+                <li><a href="#link_3.html">Weitere Infos</a>
+                <li><a href="#Kontakt">Kontakt</a></li>
+                <li>
+                    <form>
+                        <input type="text" name="suche" placeholder="Suche">
+                    </form>
+                </li>
+                <li><a
+                        href="https://www.instagram.com">Instagram</a></li>
+                <li><a
+                        href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
 
 </header>
 
 <!-- in eigene html Seite auslagern und Ihe seite 20 -->
-<nav>
+<!--<nav id="navi" >
 
         <ul>
         <li><a href="#link_1.html">About us</a></li>
         <li><a href="#link_2.html">CO2 Footprint Table</a></li>
-        <!--Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)-->
+        &lt;!&ndash;Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)&ndash;&gt;
         <li><a href="#link_3.html">Weitere Infos</a>
-        <li><a href="#link_4.html">Kontakt</a></li>
+        <li><a href="#Kontakt">Kontakt</a></li>
     </ul>
-</nav>
+</nav>-->
 <hr>
 
-<h1> About us</h1>
+<section>
+    <h1> About us</h1>
 
-<p> Umweltschutz ist keine optionale Zusatzleistung, sondern eine notwendige Verantwortung, die wir alle tragen. Es ist wichtig, dass wir unseren CO2-Fußabdruck reduzieren
-    und nachhaltige Alternativen nutzen, um die negativen Auswirkungen auf die Umwelt zu minimieren. Jeder Einzelne von uns kann einen Beitrag leisten, indem wir bewusster
-    leben und unseren Ressourcenverbrauch minimieren. Wir müssen lernen, in Harmonie mit der Natur zu leben und uns an ihren Rhythmen zu orientieren, anstatt sie auszubeuten. </p>
+    <p> Umweltschutz ist keine optionale Zusatzleistung, sondern eine notwendige Verantwortung, die wir alle tragen. Es ist wichtig, dass wir unseren CO2-Fußabdruck reduzieren
+        und nachhaltige Alternativen nutzen, um die negativen Auswirkungen auf die Umwelt zu minimieren. Jeder Einzelne von uns kann einen Beitrag leisten, indem wir bewusster
+        leben und unseren Ressourcenverbrauch minimieren. Wir müssen lernen, in Harmonie mit der Natur zu leben und uns an ihren Rhythmen zu orientieren, anstatt sie auszubeuten. </p>
 
-<p> „Nachhaltigkeit ist nicht nur eine Option. Es ist eine Notwendigkeit.“ – Ban Ki-moon</p>
+    <p> „Nachhaltigkeit ist nicht nur eine Option. Es ist eine Notwendigkeit.“ – Ban Ki-moon</p>
 
-
+</section>
 
 <hr>
+
+<section>
 
 <h1> CO2 Foot Print Table </h1>
 <p> Check this table to get to know which country or which company has the biggest C02 Footprint</p>
@@ -62,25 +86,32 @@
         <td>850 t</td>
     </tr>
 </table>
+    <img src="/earth-6410_256.gif" id="earth">
+</section>
 
-<hr>
 
-<h1> Weitere Informationen zum Thema C02</h1>
+<section id="infos">
+    <hr>
+    <h1> Weitere Informationen zum Thema C02</h1>
 <p> Wenn Sie noch mehr Informationen zu diesem thema suchen, können wir Ihnen die folgenden Webseiten zum Weiterforshen empfehlen:</p>
 
-
+</section>
 <hr>
 
+<section>
 <h1> Möchten Sie mit uns Kontakt aufnehmnen, dann nutzen Sie das folgende Formular:</h1>
-<form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-    <input type="submit" value="Submit">
-    <<!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
+<div id = "Kontakt">
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <input type="submit" value="Submit">
+        <<!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
 
-</form>
+    </form>
+</div>
+</section>
 
 
 <!--Über google schauen crossBrowserTest S.37-->
