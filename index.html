@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- weitere Metatacks noch hinzufügen-->
-    <link rel="stylesheet"  href="style.css">
+    <link href="style.css"  rel="stylesheet">
     <!--Evtl. auf verschiedene Medien CSS Anpassen. siehe S.48-->
     <title>CO2-footprint</title>
 </head>
@@ -16,23 +16,21 @@
     <p>Anderes Land - Anderer CO2 Fußabdruck</p>
     <div id="head">
         <nav>
-            <ul>
-                <li><a href="#link_1.html">About us</a></li>
-                <li><a href="#link_2.html">CO2 Footprint Table</a></li>
+
+                <a href="#link_1.html">About us</a></li>
+                <a href="#link_2.html">CO2 Footprint Table</a></li>
                 <!--Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)-->
-                <li><a href="#link_3.html">Weitere Infos</a>
-                <li><a href="#Kontakt">Kontakt</a></li>
-                <li>
+                <a href="#link_3.html">Weitere Infos</a>
+                <a href="#Kontakt">Kontakt</a></li>
+
                     <form>
-                        <input type="text" name="suche" placeholder="Suche">
+                        <input name="suche" placeholder="Suche" type="text">
                     </form>
-                </li>
-                <li><a
-                        href="https://www.instagram.com">Instagram</a></li>
-                <li><a
-                        href="https://www.facebook.com">Facebook</a></li>
-                <li><a href="#Kontakt">Kontakt</a></li>
-            </ul>
+
+                <a href="https://www.instagram.com">Instagram</a></li>
+                <a href="https://www.facebook.com">Facebook</a></li>
+                <a href="#Kontakt">Kontakt</a></li>
+
         </nav>
     </div>
 
@@ -86,8 +84,9 @@
         <td>850 t</td>
     </tr>
 </table>
-    <img src="/earth-6410_256.gif" id="earth">
+
 </section>
+
 
 
 <section id="infos">
@@ -103,9 +102,9 @@
 <div id = "Kontakt">
     <form action="/action_page.php">
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input id="fname" name="fname" type="text"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
+        <input id="lname" name="lname" type="text">
         <input type="submit" value="Submit">
         <<!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
 
