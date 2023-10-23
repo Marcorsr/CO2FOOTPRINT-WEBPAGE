@@ -2,55 +2,86 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <!-- Aus der Bootstrap Seite -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- weitere Metatacks noch hinzufügen-->
     <link href="style.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optionales Theme -->
+    <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"
+     <!--Sortier Item-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script src="myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--Evtl. auf verschiedene Medien CSS Anpassen. siehe S.48-->
     <title>CO2-footprint</title>
 </head>
 <body>
-<header>
-    <figure>
-        <!--selbsterstelltes Logo implementieren. Bei größe % nutzen um RWD gerecht zu werden -->
-        <img src="Logo.png" width=20%>
-    </figure>
-    <p>Anderes Land - Anderer CO2 Fußabdruck</p>
-    <div id="head">
-        <nav>
 
-                <a href="#link_1.html">About us</a></li>
-                <a href="#link_2.html">CO2 Footprint Table</a></li>
-                <!--Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)-->
-                <a href="#link_3.html">Weitere Infos</a>
-                <a href="#Kontakt">Kontakt</a></li>
 
-                    <form>
-                        <input name="suche" placeholder="Suche" type="text">
-                    </form>
 
-                <a href="https://www.instagram.com">Instagram</a></li>
-                <a href="https://www.facebook.com">Facebook</a></li>
-                <a href="#Kontakt">Kontakt</a></li>
 
-        </nav>
-    </div>
+    <nav class="navbar nav navbar-inverse " >
+        <!--navbar-fixed-top-->
+        <form class="form-inline">
+        <p class="navbar-brand" > <img alt="Logo" src="561a0d6db0f944a492dce6c572548194.png" class="d-inline-block align-top" width="35" height="35" ></p>
+        <p class="brandname"> CO2-Observer e.V.</p>
+        </form>
 
-</header>
 
-<!-- in eigene html Seite auslagern und Ihe seite 20 -->
-<!--<nav id="navi" >
+        <div class="container" style="margin-top: 13px">
+            <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
 
-        <ul>
-        <li><a href="#link_1.html">About us</a></li>
-        <li><a href="#link_2.html">CO2 Footprint Table</a></li>
-        &lt;!&ndash;Idee die Daten für Graifk von statistischen amt oder so zu nehmen. Und eine Option dynamische Grafik anzuzeigen (Weltkarte)&ndash;&gt;
-        <li><a href="#link_3.html">Weitere Infos</a>
-        <li><a href="#Kontakt">Kontakt</a></li>
-    </ul>
-</nav>-->
-<hr>
 
-<section>
-    <h1> About us</h1>
+
+                <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#collapsingdata" aria-controls="collapsingdata" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="sr-only">Navigation ein-/ausblenden</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- kleinees Bild noch schauen -->
+
+
+
+            <div class="collapse navbar-collapse" id="collapsingdata">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">C02 Footprint Table</a></li>
+                    <li><a href="#">Weitere Infos</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagramm</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+      </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+<!-- mit Boostrap sollte oberste Klasse ein Container sein um padding zum Rand zu bekommen -->
+<div class="container">
+<p id="Slogan" style="color:green">Anderes Land - Anderer CO2 Fußabdruck</p>  </dev>
+</div>
+
+
+<div id="mainpage">
+
+<div class="container">
+<div id="aboutus" class="panel panel-success">
+
+    <div class="panel-heading">About-us</div>
+    <div class="panel-body">
 
     <p> Umweltschutz ist keine optionale Zusatzleistung, sondern eine notwendige Verantwortung, die wir alle tragen. Es ist wichtig, dass wir unseren CO2-Fußabdruck reduzieren
         und nachhaltige Alternativen nutzen, um die negativen Auswirkungen auf die Umwelt zu minimieren. Jeder Einzelne von uns kann einen Beitrag leisten, indem wir bewusster
@@ -58,81 +89,130 @@
 
     <p> „Nachhaltigkeit ist nicht nur eine Option. Es ist eine Notwendigkeit.“ – Ban Ki-moon</p>
 
-</section>
+        </div>
 
-<hr>
+</div>
+</div>
 
-<section>
+<div class="container">
+<div id="Co2Table" class="panel panel-success">
 
-<h1> CO2 Foot Print Table </h1>
-<p> Check this table to get to know which country or which company has the biggest C02 Footprint</p>
+        <div class="panel-heading">CO2 Foot Print Table</div>
+        <div class="panel-body">
 
-<table>
-    <tr>
-        <th>Country </th>
-        <th>Company</th>
-        <th>C02 Footprint 2003</th>
-    </tr>
-    <tr>
-        <td>Germany</td>
-        <td>Allianz</td>
-        <td>100t</td>
-    </tr>
-    <tr>
-        <td>Italy</td>
-        <td>Fiat</td>
-        <td>850 t</td>
-    </tr>
-</table>
+        <p> Check this table to get to know which country or which company has the biggest C02 Footprint</p>
+            <table class="table table-striped table-bordered table-sm" id="sortable">
+                <thead>
+                <tr class="info">
+                    <th class="th-sm" onclick="sortTable(0)"><button > Country <i class="fa fa-sort"></i> <span aria-hidden="true"></span></button></th>
+                    <th class="th-sm"  onclick="sortTable(1)"><button>Company <i class="fa fa-sort"></i><span aria-hidden="true"></span></button></th>
+                    <th class="th-sm">C02 Footprint 2003</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Germany</td>
+                    <td>Allianz</td>
+                    <td>100t</td>
+                </tr>
+                <tr>
+                    <td>Italy</td>
+                    <td>Fiat</td>
+                    <td>850t</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>General Motors</td>
+                    <td>1000t</td>
+                </tr>
+                <tr>
+                    <td>Mexiko</td>
+                    <td>Don Julio</td>
+                    <td>120t</td>
+                </tr>
+                <tr>
+                    <td>Japan</td>
+                    <td>Suzuki</td>
+                    <td>130t</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Huawei</td>
+                    <td>600t</td>
+                </tr>
+                </tbody>
+            </table>
 
-</section>
+        </div>
+
+</div>
+</div>
+
+<div class="container">
+    <div id="infos" class="panel panel-success">
+
+        <div class="panel-heading">Weitere Informationen</div>
+        <div class="panel-body">
+
+            <p> Wenn Sie noch mehr Informationen zu diesem thema suchen, können wir Ihnen die folgenden Webseiten zum Weiterforshen empfehlen:</p>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div id="Kontakt" class="panel panel-success">
+    <div class="panel-heading">Möchten Sie mit uns Kontakt aufnehmnen, dann nutzen Sie das folgende Formular:</div>
+    <div class="panel-body">
 
 
 
-<section id="infos">
-    <hr>
-    <h1> Weitere Informationen zum Thema C02</h1>
-<p> Wenn Sie noch mehr Informationen zu diesem thema suchen, können wir Ihnen die folgenden Webseiten zum Weiterforshen empfehlen:</p>
-
-</section>
-<hr>
-
-<section>
-<h1> Möchten Sie mit uns Kontakt aufnehmnen, dann nutzen Sie das folgende Formular:</h1>
-<div id = "Kontakt">
     <form action="/action_page.php">
         <label for="fname">First name:</label><br>
         <input id="fname" name="fname" type="text"><br>
         <label for="lname">Last name:</label><br>
         <input id="lname" name="lname" type="text">
         <input type="submit" value="Submit">
-        <<!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
+        <!--Submit machen dass es auf neue Seite geroutet oder Pop Up Fenster mit Nachricht. Wir werden ihre anfrage bearbeiten-->
 
     </form>
+
+        </div>
+   </div>
+
 </div>
-</section>
-
-
 <!--Über google schauen crossBrowserTest S.37-->
 <!-- Validate hmtl Datei /code über validator.w3.org -->
 
-<footer>
-    <a>Kontakt</a> <!--Verlinken auf neue Seite in der über ein Formular Frage gestellt werden kann -->
+</div>
+<div class="panel-footer">Impressum</div>
+    <p class="brandname2"> CO2-Observer e.V.</p>
+
+<div class="container">
     <address>
         <dl>
+            <div class ="row">
+            <div class="col-md-4">
             <dt>Tel.</dt>
             <dd><a href="tel:+49-89-12345678">089 1234 5678</a></dd>
-
+            </div>
+            <div class="col-md-4">
             <dt>Erreichbarkeit</dt>
             <dd><span>Mo–Fr:</span> <span>16:00–21:00 Uhr</span></dd>
-
+             </div>
+            <div class="col-md-4">
             <dt>E-Mail Adresse</dt>
             <dd><a href="mailto:kontakt@example.com">kontakt@example.com</a></dd>
-
+            </div>
+            </div>
         </dl>
     </address>
+</div>
     <p>© 2023 by Marco Paletta</p>
-</footer>
+
+</div>
 
 </body>
 </html>

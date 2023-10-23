@@ -1,17 +1,27 @@
 
-
 table, td, th {
             border: 1px solid blue;
 }
 
+
 /* Add a black background color to the top navigation */
 #head {
   background-color: #333;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  /* position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+}
+
+.brandname{
+
+  color: green;
+  float: left;
+  margin-top: 20px;
 }
 
 /* Style the links inside the navigation bar */
-#head  a, form {
+#head  a  {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -20,11 +30,59 @@ table, td, th {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-#head  a:hover {
-  background-color: #ddd;
-  color: black;
+
+ #sortable th button {
+  padding: 0px;
+  margin: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
 }
+
+/* Focus and hover styling */
+/*
+#sortable th button:focus,
+#sortable th button:hover {
+  padding: 2px;
+  border: 2px solid currentcolor;
+  background-color: #e5f4ff;
+}
+*/
+
+.brandname2 {
+        color: green;
+
+        margin-left:10px;
+  }
+
+#sortable th[aria-sort="descending"] span::after {
+  content: "▼";
+  color: black;
+  font-size: 100%;
+  top: 0;
+}
+
+#sortable th[aria-sort="ascending"] span::after {
+  content: "▲";
+  color: black;
+  font-size: 100%;
+  top: 0;
+}
+
+#sortable tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+
 
 /* Add a color to the active/current link */
 #head  a.active {
@@ -36,16 +94,15 @@ table, td, th {
 #infos{     clear:both;
 
 }
-
-.bg{
-  /* The image used */
-  background-image: url("world-7425714_1920.jpg");
-
+#mainpage{
+   /* The image used */
+    background-image: url("green-4123698_1920.jpg");
   /* Full height */
   height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 25%;
 }
+
