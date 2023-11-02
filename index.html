@@ -7,27 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- weitere Metatacks noch hinzufügen-->
     <link href="style.css"  rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Optionales Theme -->
     <!-- Das neueste kompilierte und minimierte CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous"
      <!--Sortier Item-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Das neueste kompilierte und minimierte JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="myScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <!--Evtl. auf verschiedene Medien CSS Anpassen. siehe S.48-->
     <title>CO2-footprint</title>
 </head>
 <body>
+<!--bg-body-tertiary -->
+<nav class="navbar bg-dark navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+
+    <div class="container-fluid">
+
+
+            <a class="navbar-brand" > <img alt="Logo" src="561a0d6db0f944a492dce6c572548194.png" class="d-inline-block align-text-top" width="35" height="35" > CO2-Print</a>
 
 
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">About us </a>
+                <a class="nav-link active" href="#">CO2 Foot Print Table</a>
+                <a class="nav-link active" href="#">Weitere Infos</a>
+                <a class="nav-link active" href="#">Kontakt</a>
 
-    <nav class="navbar nav navbar-inverse " >
-        <!--navbar-fixed-top-->
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+   <!-- <nav class="navbar nav navbar-inverse " >
+        &lt;!&ndash;navbar-fixed-top&ndash;&gt;
         <form class="form-inline">
         <p class="navbar-brand" > <img alt="Logo" src="561a0d6db0f944a492dce6c572548194.png" class="d-inline-block align-top" width="35" height="35" ></p>
         <p class="brandname"> CO2-Observer e.V.</p>
@@ -35,7 +57,7 @@
 
 
         <div class="container" style="margin-top: 13px">
-            <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+            &lt;!&ndash; Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst &ndash;&gt;
 
 
 
@@ -47,7 +69,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <!-- kleinees Bild noch schauen -->
+                &lt;!&ndash; kleinees Bild noch schauen &ndash;&gt;
 
 
 
@@ -63,10 +85,10 @@
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Instagramm</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;
       </div>
-        <!-- /.container-fluid -->
-    </nav>
+        &lt;!&ndash; /.container-fluid &ndash;&gt;
+    </nav> -->
 
 
 <!-- mit Boostrap sollte oberste Klasse ein Container sein um padding zum Rand zu bekommen -->
@@ -180,6 +202,7 @@
     </form>
 
         </div>
+        <p> </p>
    </div>
 
 </div>
@@ -187,8 +210,9 @@
 <!-- Validate hmtl Datei /code über validator.w3.org -->
 
 </div>
-<div class="panel-footer">Impressum</div>
-    <p class="brandname2"> CO2-Observer e.V.</p>
+<div class="panel-footer text-bg-dark p-3">Impressum <span class="brandname2"> CO2-Observer e.V.</span></div>
+    <p> </p>
+
 
 <div class="container">
     <address>

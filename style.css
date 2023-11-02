@@ -58,6 +58,11 @@ table, td, th {
 }
 */
 
+
+#white{
+ text-decoration-color: white;
+}
+
 .brandname2 {
         color: green;
 
