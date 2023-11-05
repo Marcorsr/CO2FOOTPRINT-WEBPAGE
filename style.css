@@ -20,6 +20,10 @@ table, td, th {
   margin-top: 20px;
 }
 
+.direction{
+ dir="rtl";
+}
+
 /* Style the links inside the navigation bar */
 #head  a  {
   float: left;

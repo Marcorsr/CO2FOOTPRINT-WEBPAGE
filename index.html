@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+<main dir="ltr">
 <head>
     <meta charset="UTF-8">
     <!-- Aus der Bootstrap Seite -->
@@ -25,7 +26,7 @@
 <!--bg-body-tertiary -->
 <nav class="navbar bg-dark navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
 
-    <div class="container-fluid">
+    <div class="container-fluid" dir="lft">
 
 
             <a class="navbar-brand" > <img alt="Logo" src="561a0d6db0f944a492dce6c572548194.png" class="d-inline-block align-text-top" width="35" height="35" > CO2-Print</a>
@@ -35,15 +36,17 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">About us </a>
-                <a class="nav-link active" href="#">CO2 Foot Print Table</a>
-                <a class="nav-link active" href="#">Weitere Infos</a>
-                <a class="nav-link active" href="#">Kontakt</a>
+                <a class="nav-link active"   href="#">About us </a>
+                <a class="nav-link active"  href="#">CO2 Foot Print Table</a>
+                <a class="nav-link active"  href="#">Weitere Infos</a>
+                <a class="nav-link active"  href="#">Kontakt</a>
 
             </div>
         </div>
+
     </div>
 </nav>
 
@@ -99,6 +102,22 @@
 
 <div id="mainpage">
 
+
+<div class="container">
+    <div id="Schriftkultur" class="panel bg-info">
+        <div class="panel-body">
+    <p> Wählen Sie bitte zur Anzeige des Menüs ihre gewünschte Schriftkultur aus:</p>
+    <form>
+        <input type="radio" id="lft" name="Schriftkultur" value="left" checked="checked">
+        <label for="lft">Linksschreibweise</label><br>
+        <input type="radio" id="rtl" name="Schriftkultur" value="right">
+        <label for="rtl">Rechtsschreibweise</label><br>
+        <p> </p>
+    </form>
+    </div>
+    </div>
+
+</div>
 <div class="container">
 <div id="aboutus" class="panel panel-success">
 
@@ -123,6 +142,7 @@
         <div class="panel-body">
 
         <p> Check this table to get to know which country or which company has the biggest C02 Footprint</p>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tabelle Filtern nach..." title="Hinweis: Eingabe filtert erst Country. Wenn nicht erfolgreich filtert es die Company">
             <table class="table table-striped table-bordered table-sm" id="sortable">
                 <thead>
                 <tr class="info">
