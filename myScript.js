@@ -90,3 +90,14 @@ function myFunction() {
 }
 }
 }
+
+function direction(){
+
+if(document.getElementById("lft").checked){
+  document.getElementById("navbar").dir="lft"
+} else{
+  document.getElementById("navbar").dir="rtl"
+}
+}
+
+

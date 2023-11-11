@@ -26,7 +26,7 @@
 <!--bg-body-tertiary -->
 <nav class="navbar bg-dark navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
 
-    <div class="container-fluid" dir="lft">
+    <div id="navbar" class="container-fluid" dir="lft">
 
 
             <a class="navbar-brand" > <img alt="Logo" src="561a0d6db0f944a492dce6c572548194.png" class="d-inline-block align-text-top" width="35" height="35" > CO2-Print</a>
@@ -108,9 +108,9 @@
         <div class="panel-body">
     <p> Wählen Sie bitte zur Anzeige des Menüs ihre gewünschte Schriftkultur aus:</p>
     <form>
-        <input type="radio" id="lft" name="Schriftkultur" value="left" checked="checked">
+        <input type="radio" id="lft" name="Schriftkultur" value="left" checked="checked" onclick="direction()">
         <label for="lft">Linksschreibweise</label><br>
-        <input type="radio" id="rtl" name="Schriftkultur" value="right">
+        <input type="radio" id="rtl" name="Schriftkultur" value="right" onclick="direction()">
         <label for="rtl">Rechtsschreibweise</label><br>
         <p> </p>
     </form>
