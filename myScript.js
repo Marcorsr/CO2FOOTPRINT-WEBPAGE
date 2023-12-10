@@ -58,7 +58,7 @@ function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
   var ersterFilter
   input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
+  filter = input.value.toUpperCase()
   table = document.getElementById("sortable");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
@@ -101,3 +101,92 @@ if(document.getElementById("lft").checked){
 }
 
 
+// When the user clicks on submit, open the popup and give message
+// Then close after Ok or Cancel and reload the page.
+function showPopUp() {
+  var name = document.getElementById("fname")
+  var lname = document.getElementById("lname")
+
+  if(confirm("Danke für deine Frage" +" " + fname.value + " " + lname.value +
+  "\nWir melden uns baldmöglichst bei dir !")){
+ window.history.back()}
+  else{
+ window.history.back()
+ }
+}
+
+const btnSumbit = document.getElementById("submitButton");
+const btnReset = document.getElementById("ResetButton");
+const namevalidate= document.getElementById("fname");
+
+//namevalidate.addEventListener('change', validate);
+btnReset.addEventListener('click', emptyResult);
+btnSumbit.addEventListener('click',showResponse );
+
+function emptyResult(){
+var rueckmeldung1 = document.getElementById("rueckmeldung")
+ rueckmeldung1.innerHTML =" ";
+}
+
+/*
+function validate(){
+
+
+
+    // Allow A-Z, a-z, 0-9 and underscore. Min 1 char.
+    var re = /^[a-zA-Z0-9_]+$/;
+
+    var result = re.test(namevalidate.value);
+    if(!result){
+      namevalidate.setCustomValidity('Passwörter müssen übereinstimmen!');
+    }
+
+} */
+
+function showResponse(){
+
+var name1 = document.getElementById("fname").value;
+var name2 = document.getElementById("lname").value;
+var frage = document.getElementById("lFrage").value;
+var regName = /^[a-zA-Z]+$/;
+var defaultvalue = "Bitte formulieren Sie hier Ihre Frage. …"
+if(!regName.test(name1) ){
+document.getElementById("fname").value =" ";
+alert('Ungültiger Firsname!');
+}
+
+if(!regName.test(name2) ){
+document.getElementById("lname").value =" ";
+alert('Ungültiger Lastname!');
+}
+
+if(frage === defaultvalue){
+alert('Keine Frage gestellt!');
+
+} else {
+var lname1 = document.getElementById("lname").value
+var rueckmeldung = document.getElementById("rueckmeldung")
+
+if(document.getElementById("male").checked){
+rueckmeldung.innerHTML = "Hallo Herr " + name1 +" "+lname1+". Danke für Ihre Frage. Wir melden uns bald bei Ihnen.";
+}else {
+rueckmeldung.innerHTML = "Hallo Frau " + name1+" "+lname1+". Danke für Ihre Frage. Wir melden uns bald bei Ihnen.";
+}
+
+
+}
+
+
+
+}
+
+
+
+//
+//function checkSubmitt(){
+//var fname = document.getElementById("fname").value
+//if(fname !===''){
+//document.getElementById("submitButton").disabled = false;
+//}
+
+//}

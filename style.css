@@ -13,6 +13,10 @@ table, td, th {
    width: 100%; /* Full width */
 }
 
+.collapse a:hover {
+          color: blue;
+        }
+
 .brandname{
 
   color: green;
@@ -99,13 +103,19 @@ table, td, th {
   color: white;
 }
 
+/* Add Color to Rüeckmeldung Paragraph*/
+#rueckmeldung {
+
+  color: green;
+}
+
 
 #infos{     clear:both;
 
 }
 #mainpage{
    /* The image used */
-    background-image: url("green-4123698_1920.jpg");
+ /*   background-image: url("green-4123698_1920.jpg"); */
   /* Full height */
   height: 100%;
 
